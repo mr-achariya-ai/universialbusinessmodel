@@ -1,0 +1,131 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #7c3aed;
+  --accent-2: #2563eb;
+  --border: #334155;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+  background: radial-gradient(circle at top, #1e1b4b, var(--bg) 35%);
+  color: var(--text);
+}
+
+.app {
+  width: min(1100px, 94vw);
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.app__header h1 {
+  margin: 0 0 .5rem;
+}
+
+.app__header p { color: var(--muted); margin: 0 0 .75rem; }
+.back-link { color: #c4b5fd; }
+
+.panel {
+  border: 1px solid var(--border);
+  background: rgba(17, 24, 39, .85);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.panel h2 { margin-top: 0; font-size: 1.05rem; }
+
+.actions {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin-bottom: .75rem;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  padding: .6rem .9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.btn--muted { background: #374151; }
+
+.status { color: #cbd5e1; margin: .3rem 0 0; }
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: .8rem;
+}
+
+video {
+  width: 100%;
+  background: #020617;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-height: 190px;
+}
+
+figcaption {
+  color: var(--muted);
+  margin-bottom: .4rem;
+  font-size: .9rem;
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: .8rem;
+}
+
+label {
+  display: block;
+  margin-bottom: .4rem;
+  color: var(--muted);
+}
+
+textarea,
+input {
+  width: 100%;
+  background: #0b1222;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: .6rem;
+}
+
+textarea { min-height: 160px; resize: vertical; margin-bottom: .6rem; }
+
+.chat-log {
+  min-height: 130px;
+  max-height: 260px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #0b1222;
+  padding: .7rem;
+  margin-bottom: .75rem;
+}
+
+.msg { margin: 0 0 .4rem; }
+.msg strong { color: #c4b5fd; }
+
+.chat-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .6rem;
+}

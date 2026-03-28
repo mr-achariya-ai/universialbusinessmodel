@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AALAI WebRTC Demo</title>
+  <link rel="stylesheet" href="webrtc.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>WebRTC Video, Audio & Text Chat</h1>
+      <p>Open this page in two browser windows/devices and exchange signaling text to connect.</p>
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </header>
+
+    <section class="panel panel--controls">
+      <h2>1) Media & Connection</h2>
+      <div class="actions">
+        <button id="startMediaBtn" class="btn">Start Camera & Mic</button>
+        <button id="createOfferBtn" class="btn" disabled>Create Offer</button>
+        <button id="createAnswerBtn" class="btn" disabled>Create Answer</button>
+      </div>
+      <div class="actions">
+        <button id="toggleAudioBtn" class="btn btn--muted" disabled>Mute Audio</button>
+        <button id="toggleVideoBtn" class="btn btn--muted" disabled>Turn Video Off</button>
+      </div>
+      <p id="status" class="status">Status: idle</p>
+    </section>
+
+    <section class="panel panel--video">
+      <h2>2) Video / Audio</h2>
+      <div class="video-grid">
+        <figure>
+          <figcaption>Local</figcaption>
+          <video id="localVideo" autoplay playsinline muted></video>
+        </figure>
+        <figure>
+          <figcaption>Remote</figcaption>
+          <video id="remoteVideo" autoplay playsinline></video>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel panel--signal">
+      <h2>3) Signaling (copy/paste)</h2>
+      <div class="signal-grid">
+        <div>
+          <label for="localSignal">Local Signal</label>
+          <textarea id="localSignal" readonly placeholder="Generated SDP/ICE appears here"></textarea>
+          <button id="copyLocalSignalBtn" class="btn">Copy Local Signal</button>
+        </div>
+        <div>
+          <label for="remoteSignal">Remote Signal</label>
+          <textarea id="remoteSignal" placeholder="Paste remote SDP/ICE here"></textarea>
+          <button id="applyRemoteSignalBtn" class="btn">Apply Remote Signal</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel--chat">
+      <h2>4) Text Chat</h2>
+      <div id="chatLog" class="chat-log" aria-live="polite"></div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Type a message..." autocomplete="off" />
+        <button class="btn" type="submit" id="sendBtn" disabled>Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="webrtc.js"></script>
+</body>
+</html>

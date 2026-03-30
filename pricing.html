@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — AALAI Social Business Networking</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pricing.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo">AAL<span>AI</span></a>
+      <nav class="nav__links">
+        <a href="index.html#features">Features</a>
+        <a href="about.html">About</a>
+        <a href="decision-intelligence.html">Decision Intelligence</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact" class="btn btn--sm">Get Started</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <span class="badge">Simple, Transparent Pricing</span>
+      <h1>Invest in connections that<br /><span>actually convert.</span></h1>
+      <p>Start free, scale when you're ready. Every plan includes AI-powered matching, smart messaging, and real-time analytics.</p>
+    </div>
+    <div class="page-hero__wave">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8f7ff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PRICING PLANS -->
+  <section class="pricing">
+    <div class="container">
+
+      <!-- Billing toggle -->
+      <div class="billing-toggle">
+        <span class="billing-label active" id="label-monthly">Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="billingToggle" onchange="switchBilling()" />
+          <div class="toggle-track"></div>
+          <div class="toggle-thumb"></div>
+        </label>
+        <span class="billing-label" id="label-annual">Annual <span class="save-badge">Save 25%</span></span>
+      </div>
+
+      <div class="plans-grid">
+
+        <!-- FREE -->
+        <div class="plan-card">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">
+            <span class="currency">$</span>
+            <span class="amount">0</span>
+            <span class="period">/ month</span>
+          </div>
+          <div class="plan-desc">Everything you need to get started with intelligent business networking.</div>
+          <hr class="plan-divider" />
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> Up to 50 connections</li>
+            <li><span class="check">&#10003;</span> AI-matched suggestions (5/month)</li>
+            <li><span class="check">&#10003;</span> Basic business profile</li>
+            <li><span class="check">&#10003;</span> Smart messaging (20 messages/day)</li>
+            <li><span class="check">&#10003;</span> Opportunity board (view only)</li>
+            <li><span class="cross">&#10007;</span> Network analytics dashboard</li>
+            <li><span class="cross">&#10007;</span> Decision Intelligence Engine</li>
+            <li><span class="cross">&#10007;</span> Priority support</li>
+          </ul>
+          <a href="index.html#contact" class="btn btn--ghost plan-cta">Get Started Free</a>
+        </div>
+
+        <!-- PRO (featured) -->
+        <div class="plan-card plan-card--featured">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">
+            <span class="currency">$</span>
+            <span class="amount" id="pro-price">49</span>
+            <span class="period">/ month</span>
+          </div>
+          <div class="plan-desc">For professionals serious about growing their business network with AI.</div>
+          <hr class="plan-divider" />
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> Unlimited connections</li>
+            <li><span class="check">&#10003;</span> Unlimited AI-matched suggestions</li>
+            <li><span class="check">&#10003;</span> Enhanced business profile + portfolio</li>
+            <li><span class="check">&#10003;</span> Unlimited smart messaging</li>
+            <li><span class="check">&#10003;</span> Opportunity board (post + apply)</li>
+            <li><span class="check">&#10003;</span> Full network analytics dashboard</li>
+            <li><span class="check">&#10003;</span> Decision Intelligence (Augment mode)</li>
+            <li><span class="check">&#10003;</span> Email support within 24h</li>
+          </ul>
+          <a href="index.html#contact" class="btn btn--primary plan-cta">Start Pro Free Trial</a>
+        </div>
+
+        <!-- BUSINESS -->
+        <div class="plan-card">
+          <div class="plan-name">Business</div>
+          <div class="plan-price">
+            <span class="currency">$</span>
+            <span class="amount" id="biz-price">149</span>
+            <span class="period">/ month</span>
+          </div>
+          <div class="plan-desc">For teams and companies that need collaboration, admin controls, and full AI automation.</div>
+          <hr class="plan-divider" />
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> Everything in Pro</li>
+            <li><span class="check">&#10003;</span> Up to 10 team seats</li>
+            <li><span class="check">&#10003;</span> Shared team network & analytics</li>
+            <li><span class="check">&#10003;</span> Admin dashboard & permissions</li>
+            <li><span class="check">&#10003;</span> Decision Intelligence (all 4 modes)</li>
+            <li><span class="check">&#10003;</span> Custom AI matching rules</li>
+            <li><span class="check">&#10003;</span> API access (1,000 req/day)</li>
+            <li><span class="check">&#10003;</span> Priority support within 4h</li>
+          </ul>
+          <a href="index.html#contact" class="btn btn--primary plan-cta">Start Business Trial</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTERPRISE BANNER -->
+  <section class="enterprise">
+    <div class="container">
+      <div class="enterprise__inner">
+        <div class="enterprise__text">
+          <h2>Need something bigger?</h2>
+          <p>For large organisations requiring custom seat counts, dedicated infrastructure, SSO, SLA guarantees, and white-glove onboarding — let's build a plan together.</p>
+        </div>
+        <div class="enterprise__cta">
+          <a href="index.html#contact" class="btn btn--primary">Talk to Sales &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">FAQ</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq__list">
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            Can I change plans at any time?
+            <span class="faq-chevron">&#9660;</span>
+          </button>
+          <div class="faq-item__answer">
+            Yes. You can upgrade, downgrade, or cancel your plan at any time from your account settings. Upgrades take effect immediately; downgrades apply at the end of your current billing cycle.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            What happens when my free trial ends?
+            <span class="faq-chevron">&#9660;</span>
+          </button>
+          <div class="faq-item__answer">
+            After your 14-day free trial you'll be asked to enter a payment method to continue. If you choose not to, your account automatically moves to the Starter (free) plan and all your data is preserved.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            Is there a contract or lock-in?
+            <span class="faq-chevron">&#9660;</span>
+          </button>
+          <div class="faq-item__answer">
+            No contracts and no lock-in. Monthly plans can be cancelled at any time. Annual plans are billed upfront and are non-refundable after 30 days, but you may cancel to avoid renewal.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            How does the Decision Intelligence Engine work on paid plans?
+            <span class="faq-chevron">&#9660;</span>
+          </button>
+          <div class="faq-item__answer">
+            Pro plan users get access to Decision Augment mode — the AI provides predictions and suggestions for your review. Business plan users unlock all four modes (Automation, Augment, Support, Observer) and can configure which mode applies to each business process.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            Do you offer discounts for startups or non-profits?
+            <span class="faq-chevron">&#9660;</span>
+          </button>
+          <div class="faq-item__answer">
+            Yes. We offer 50% off Pro and Business plans for registered non-profits, early-stage startups (under 2 years, under $1M ARR), and educational institutions. Contact us with proof of eligibility.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            What payment methods do you accept?
+            <span class="faq-chevron">&#9660;</span>
+          </button>
+          <div class="faq-item__answer">
+            We accept all major credit and debit cards (Visa, Mastercard, Amex), PayPal, and bank transfers for annual Business and Enterprise plans. All payments are processed securely via Stripe.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">AAL<span>AI</span></a>
+        <p>Social Business Networking powered by AI.</p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <strong>Product</strong>
+          <a href="index.html#features">Features</a>
+          <a href="decision-intelligence.html">Decision Intelligence</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div>
+          <strong>Company</strong>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div>
+          <strong>Legal</strong>
+          <a href="privacy.html">Privacy</a>
+          <a href="privacy.html#terms">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 AALAI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    const prices = { pro: { monthly: 49, annual: 37 }, biz: { monthly: 149, annual: 112 } };
+    let isAnnual = false;
+
+    function switchBilling() {
+      isAnnual = document.getElementById('billingToggle').checked;
+      document.getElementById('label-monthly').classList.toggle('active', !isAnnual);
+      document.getElementById('label-annual').classList.toggle('active', isAnnual);
+      document.getElementById('pro-price').textContent = isAnnual ? prices.pro.annual : prices.pro.monthly;
+      document.getElementById('biz-price').textContent = isAnnual ? prices.biz.annual : prices.biz.monthly;
+    }
+
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

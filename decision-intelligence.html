@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decision Intelligence — AALAI Social Business Networking</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="decision-intelligence.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo">AAL<span>AI</span></a>
+      <nav class="nav__links">
+        <a href="index.html#features">Features</a>
+        <a href="about.html">About</a>
+        <a href="decision-intelligence.html" class="active">Decision Intelligence</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact" class="btn btn--sm">Get Started</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <span class="badge">Human + AI Framework</span>
+      <h1>Business Process<br /><span>Decision Intelligence</span></h1>
+      <p>
+        AALAI's LLM-based Decision Intelligence Engine dynamically routes every business process
+        to the optimal human-AI collaboration mode — from full automation to expert oversight —
+        ensuring the right level of intelligence at every decision point.
+      </p>
+    </div>
+    <div class="page-hero__wave">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8f7ff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- FLOW OVERVIEW -->
+  <section class="flow-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">System Architecture</span>
+        <h2>How Decision Intelligence works</h2>
+        <p>Every business request flows through three layers before a decision is made or escalated.</p>
+      </div>
+
+      <div class="flow-diagram">
+        <!-- Row 1: Actors + Channel -->
+        <div class="flow-row" style="gap: 24px; margin-bottom: 0;">
+          <!-- Biz User actor -->
+          <div class="actor" style="min-width:80px;">
+            <div class="actor__figure">
+              <div class="actor__head"></div>
+              <div class="actor__body" style="position:relative;">
+                <div class="actor__arms"></div>
+              </div>
+              <div class="actor__legs">
+                <div class="actor__leg"></div>
+                <div class="actor__leg" style="transform:rotate(-10deg)"></div>
+              </div>
+            </div>
+            <span>Biz Users</span>
+          </div>
+
+          <div class="flow-arrow">
+            <span>&#8594;</span>
+            <div>Request</div>
+          </div>
+
+          <div class="flow-box flow-box--channel" style="flex:1; max-width:260px;">
+            <strong>Process Channel</strong>
+            <div style="font-size:0.75rem;color:var(--muted);font-weight:400;margin-top:4px;">Receives requests · Routes responses · Triggers automated decisions</div>
+          </div>
+
+          <div class="flow-arrow">
+            <span>&#8594;</span>
+            <div>Reaction</div>
+          </div>
+
+          <!-- Biz Stakeholders actor -->
+          <div class="actor" style="min-width:80px;">
+            <div class="actor__figure">
+              <div class="actor__head"></div>
+              <div class="actor__body" style="position:relative;">
+                <div class="actor__arms"></div>
+              </div>
+              <div class="actor__legs">
+                <div class="actor__leg"></div>
+                <div class="actor__leg" style="transform:rotate(-10deg)"></div>
+              </div>
+            </div>
+            <span>Biz Stakeholders</span>
+          </div>
+        </div>
+
+        <!-- Row 2: vertical arrows down -->
+        <div class="flow-row" style="gap: 24px; margin: 0;">
+          <div style="min-width:80px;"></div>
+          <div style="width:40px;"></div>
+          <div style="flex:1;max-width:260px;display:flex;justify-content:center;">
+            <div class="flow-arrow-v">
+              <span>&#8595;</span>
+              <div>Escalation</div>
+              <span>&#8593;</span>
+              <div>Response</div>
+            </div>
+          </div>
+          <div style="width:40px;"></div>
+          <div style="min-width:80px;display:flex;justify-content:center;">
+            <div class="flow-arrow-v">
+              <span>&#8595;</span>
+              <div>Reaction</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: LLM Engine + Human Input side by side -->
+        <div class="flow-row" style="gap: 24px; align-items: flex-start; margin-bottom: 0;">
+          <div style="min-width:80px;"></div>
+          <div style="width:40px;"></div>
+          <div style="flex:1;max-width:260px;">
+            <div class="flow-box flow-box--engine" style="width:100%;">
+              <div style="font-size:0.95rem;font-weight:700;margin-bottom:12px;line-height:1.4;">LLM-based Decision<br/>Intelligence Engine</div>
+              <div style="display:flex;flex-direction:column;gap:6px;">
+                <div style="background:rgba(255,255,255,0.18);border-radius:6px;padding:5px 10px;font-size:0.75rem;">Reasoning</div>
+                <div style="background:rgba(255,255,255,0.18);border-radius:6px;padding:5px 10px;font-size:0.75rem;">Decision Optimise</div>
+                <div style="background:rgba(255,255,255,0.18);border-radius:6px;padding:5px 10px;font-size:0.75rem;">Decision Route</div>
+              </div>
+            </div>
+          </div>
+          <div style="width:40px;display:flex;align-items:center;justify-content:center;">
+            <div style="font-size:1.2rem;color:var(--primary);">&#8594;</div>
+          </div>
+          <div style="min-width:130px;display:flex;justify-content:center;">
+            <div class="human-input">Human<br/>Input</div>
+          </div>
+        </div>
+
+        <!-- Row 4: Decision Mode routing arrow -->
+        <div class="flow-row" style="gap: 24px; margin: 0;">
+          <div style="min-width:80px;"></div>
+          <div style="width:40px;"></div>
+          <div style="flex:1;max-width:260px;display:flex;justify-content:flex-end;">
+            <div class="flow-arrow-v" style="align-items:flex-end;">
+              <span>&#8595;</span>
+              <div>Decision Route</div>
+            </div>
+          </div>
+          <div style="width:40px;"></div>
+          <div style="min-width:130px;"></div>
+        </div>
+
+        <!-- Row 5: Decision Modes stack -->
+        <div class="flow-row" style="gap: 24px; align-items: flex-start;">
+          <div style="min-width:80px;"></div>
+          <div style="width:40px;"></div>
+          <div style="flex:1;max-width:260px;">
+            <div class="flow-modes-stack">
+              <div class="flow-box flow-box--mode" style="background:#fef3c7;border:2px solid #f59e0b;color:#92400e;">
+                <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;">High Accuracy</div>
+                Human Out of the Loop
+                <div style="font-size:0.7rem;margin-top:4px;font-style:italic;">Decision Automation</div>
+              </div>
+              <div class="flow-box flow-box--mode" style="background:#dbeafe;border:2px solid #3b82f6;color:#1e40af;">
+                <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;">Confident</div>
+                Human Over the Loop
+                <div style="font-size:0.7rem;margin-top:4px;font-style:italic;">Decision Augment</div>
+              </div>
+              <div class="flow-box flow-box--mode" style="background:#ffe4e6;border:2px solid #f43f5e;color:#9f1239;">
+                <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;">Learned</div>
+                Human on the Loop
+                <div style="font-size:0.7rem;margin-top:4px;font-style:italic;">Decision Support</div>
+              </div>
+              <div class="flow-box flow-box--mode" style="background:#ede9fe;border:2px solid #8b5cf6;color:#5b21b6;">
+                <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;">New Process</div>
+                Human in the Loop
+                <div style="font-size:0.7rem;margin-top:4px;font-style:italic;">Decision Observer</div>
+              </div>
+            </div>
+          </div>
+          <div style="width:40px;"></div>
+          <div style="min-width:130px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LLM ENGINE CAPABILITIES -->
+  <section class="engine-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">The Engine</span>
+        <h2>LLM-based Decision Intelligence Engine</h2>
+        <p>Three core capabilities work in concert to route every process to the right decision mode with the right level of human involvement.</p>
+      </div>
+      <div class="engine-cards">
+
+        <div class="engine-card">
+          <div class="engine-card__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
+              <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h3>Reasoning</h3>
+          <p>The engine applies multi-step contextual reasoning across business rules, historical outcomes, and real-time signals to understand the full context of each decision request before acting.</p>
+        </div>
+
+        <div class="engine-card">
+          <div class="engine-card__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3>Decision Optimise</h3>
+          <p>Using reinforcement signals and outcome data, the engine continuously refines decision policies — balancing speed, accuracy, risk tolerance, and business value to optimise for the best result.</p>
+        </div>
+
+        <div class="engine-card">
+          <div class="engine-card__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
+              <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6-10l6-3m0 13l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 10m0 10V10"/>
+            </svg>
+          </div>
+          <h3>Decision Route</h3>
+          <p>Based on process maturity, confidence scores, and risk parameters, the router assigns each process to the most appropriate human-AI collaboration mode — from full automation to expert-in-the-loop oversight.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DECISION MODES -->
+  <section class="modes">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">4 Collaboration Modes</span>
+        <h2>Matching human involvement to process maturity</h2>
+        <p>The engine routes each process to the right mode based on accuracy, confidence, and the cost of a wrong decision. Click any card to expand details.</p>
+      </div>
+      <div class="modes-grid">
+
+        <!-- Mode 1: Human Out of the Loop -->
+        <div class="mode-card mode--automation" id="mode-automation">
+          <div class="mode-card__header" onclick="toggleMode('mode-automation')">
+            <div class="mode-card__left">
+              <div>
+                <div class="mode-loop-label">Human Out of the Loop</div>
+                <h3>Decision Automation</h3>
+                <div class="mode-card__trigger">Triggered by: High accuracy process</div>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+              <span class="mode-badge">Automation</span>
+              <span class="mode-card__chevron">&#9660;</span>
+            </div>
+          </div>
+          <div class="mode-card__body">
+            <p>
+              The AI acts fully autonomously. Decisions are made and executed without human review.
+              This mode is reserved for processes with a long, validated track record of high-accuracy
+              outcomes where the cost of delay exceeds the risk of error.
+            </p>
+            <div class="mode-example">
+              <strong>Example use case</strong>
+              Automated invoice matching and payment approval for established vendor relationships
+              with a 99%+ historical accuracy rate — no human sign-off required.
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode 2: Human Over the Loop -->
+        <div class="mode-card mode--augment" id="mode-augment">
+          <div class="mode-card__header" onclick="toggleMode('mode-augment')">
+            <div class="mode-card__left">
+              <div>
+                <div class="mode-loop-label">Human Over the Loop</div>
+                <h3>Decision Augment</h3>
+                <div class="mode-card__trigger">Triggered by: Confident process</div>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+              <span class="mode-badge">Augment</span>
+              <span class="mode-card__chevron">&#9660;</span>
+            </div>
+          </div>
+          <div class="mode-card__body">
+            <p>
+              The AI provides predictions, suggestions, or analysis that a human supervisor reviews
+              at a high level. The human retains final authority but relies on AI-generated insights
+              to act faster and with greater confidence.
+            </p>
+            <div class="mode-example">
+              <strong>Example use case</strong>
+              AI surfaces deal risk scores and recommended contract terms for a sales director to
+              approve or override before a proposal is sent — reducing review time by 70%.
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode 3: Human on the Loop -->
+        <div class="mode-card mode--support" id="mode-support">
+          <div class="mode-card__header" onclick="toggleMode('mode-support')">
+            <div class="mode-card__left">
+              <div>
+                <div class="mode-loop-label">Human on the Loop</div>
+                <h3>Decision Support</h3>
+                <div class="mode-card__trigger">Triggered by: Learned process</div>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+              <span class="mode-badge">Support</span>
+              <span class="mode-card__chevron">&#9660;</span>
+            </div>
+          </div>
+          <div class="mode-card__body">
+            <p>
+              The AI organises data, visualises options, or suggests possible alternatives to help
+              a human make a well-informed decision. The human is actively in control; the AI acts
+              as a highly capable analyst and advisor.
+            </p>
+            <div class="mode-example">
+              <strong>Example use case</strong>
+              AI aggregates market data, customer feedback, and competitor pricing into a structured
+              comparison dashboard that a product manager uses to set the final pricing strategy.
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode 4: Human in the Loop -->
+        <div class="mode-card mode--observer" id="mode-observer">
+          <div class="mode-card__header" onclick="toggleMode('mode-observer')">
+            <div class="mode-card__left">
+              <div>
+                <div class="mode-loop-label">Human in the Loop</div>
+                <h3>Decision Observer</h3>
+                <div class="mode-card__trigger">Triggered by: New process</div>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+              <span class="mode-badge">Observer</span>
+              <span class="mode-card__chevron">&#9660;</span>
+            </div>
+          </div>
+          <div class="mode-card__body">
+            <p>
+              The human is fully in control and makes every decision. The AI observes interactions,
+              captures patterns, and begins building the knowledge base needed to graduate this
+              process toward higher automation over time.
+            </p>
+            <div class="mode-example">
+              <strong>Example use case</strong>
+              A newly launched partner onboarding workflow is handled entirely by the partnerships
+              team while the AI logs decision patterns — preparing for future Decision Support mode.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CLASSIFIER -->
+  <section class="classifier">
+    <div class="container classifier__inner">
+      <div class="section-header">
+        <span class="badge">Try It</span>
+        <h2>Find your decision mode</h2>
+        <p>Select the characteristics of your business process and the engine will recommend the optimal human-AI collaboration mode.</p>
+      </div>
+
+      <div class="classifier-form">
+        <div class="form-group">
+          <label for="maturity">Process maturity</label>
+          <select id="maturity" onchange="classify()">
+            <option value="">— Select —</option>
+            <option value="new">New process (no history)</option>
+            <option value="learning">Learning (some history)</option>
+            <option value="established">Established (good track record)</option>
+            <option value="optimized">Optimized (high accuracy)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="confidence">AI confidence level</label>
+          <select id="confidence" onchange="classify()">
+            <option value="">— Select —</option>
+            <option value="low">Low (&lt; 60%)</option>
+            <option value="medium">Medium (60–80%)</option>
+            <option value="high">High (80–95%)</option>
+            <option value="very-high">Very high (&gt; 95%)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="oversight">Human oversight needed</label>
+          <select id="oversight" onchange="classify()">
+            <option value="">— Select —</option>
+            <option value="critical">Critical (errors are costly)</option>
+            <option value="advisory">Advisory (review recommended)</option>
+            <option value="monitoring">Monitoring (spot-checks only)</option>
+            <option value="none">None (fully trusted)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="classifier-result" id="classifierResult">
+        <div class="classifier-result__mode" id="resultMode"></div>
+        <h3 id="resultTitle"></h3>
+        <span class="result-label" id="resultLabel"></span>
+        <p id="resultDesc"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">AAL<span>AI</span></a>
+        <p>Social Business Networking powered by AI.</p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <strong>Product</strong>
+          <a href="index.html#features">Features</a>
+          <a href="decision-intelligence.html">Decision Intelligence</a>
+          <a href="#">Pricing</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div>
+          <strong>Company</strong>
+          <a href="about.html">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <strong>Legal</strong>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 AALAI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function toggleMode(id) {
+      const card = document.getElementById(id);
+      card.classList.toggle('open');
+    }
+
+    const modes = {
+      automation: {
+        cls: 'result--automation',
+        modeLabel: 'Human Out of the Loop',
+        title: 'Decision Automation',
+        label: 'Full Automation',
+        desc: 'Your process has a strong track record and very high AI confidence with minimal oversight required. The engine will act autonomously — executing decisions end-to-end without human review, and flagging only anomalies that fall outside defined thresholds.'
+      },
+      augment: {
+        cls: 'result--augment',
+        modeLabel: 'Human Over the Loop',
+        title: 'Decision Augment',
+        label: 'AI-Augmented',
+        desc: 'The AI will provide predictions, risk scores, and recommended actions. A human supervisor reviews these at a high level before approving or overriding. This balances speed with accountability — ideal for confident but business-critical decisions.'
+      },
+      support: {
+        cls: 'result--support',
+        modeLabel: 'Human on the Loop',
+        title: 'Decision Support',
+        label: 'Human Supported',
+        desc: 'The AI organises data, visualises your options, and surfaces possible alternatives to inform a human decision-maker. The human is fully in control; the AI acts as a powerful analyst. This mode works well for processes still building their accuracy record.'
+      },
+      observer: {
+        cls: 'result--observer',
+        modeLabel: 'Human in the Loop',
+        title: 'Decision Observer',
+        label: 'Human Controlled',
+        desc: 'This is a new or critical process requiring full human ownership at every step. The AI observes, logs patterns, and begins learning from each decision made. Over time, as confidence builds, the engine will propose graduating this process to Decision Support.'
+      }
+    };
+
+    function classify() {
+      const maturity = document.getElementById('maturity').value;
+      const confidence = document.getElementById('confidence').value;
+      const oversight = document.getElementById('oversight').value;
+
+      if (!maturity || !confidence || !oversight) return;
+
+      let score = 0;
+      if (maturity === 'optimized') score += 3;
+      else if (maturity === 'established') score += 2;
+      else if (maturity === 'learning') score += 1;
+
+      if (confidence === 'very-high') score += 3;
+      else if (confidence === 'high') score += 2;
+      else if (confidence === 'medium') score += 1;
+
+      if (oversight === 'none') score += 3;
+      else if (oversight === 'monitoring') score += 2;
+      else if (oversight === 'advisory') score += 1;
+
+      let mode;
+      if (score >= 8) mode = modes.automation;
+      else if (score >= 5) mode = modes.augment;
+      else if (score >= 3) mode = modes.support;
+      else mode = modes.observer;
+
+      const result = document.getElementById('classifierResult');
+      result.className = 'classifier-result visible ' + mode.cls;
+      document.getElementById('resultMode').textContent = mode.modeLabel;
+      document.getElementById('resultTitle').textContent = mode.title;
+      document.getElementById('resultLabel').textContent = mode.label;
+      document.getElementById('resultDesc').textContent = mode.desc;
+    }
+  </script>
+</body>
+</html>
